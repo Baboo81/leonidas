@@ -1,25 +1,42 @@
 "use strict";
 
-//Nav:
-const ratio = .1;
+//Nav animation:
+document.addEventListener('scroll', () => {
+    const navBar = document.querySelector('nav');
+    const scaleLogo = document.querySelector('.logo');
+
+    if (window.scrollY > 0) {
+        navBar.classList.add('scrolled');
+        scaleLogo.classList.add('scrolledScale');
+    } else {
+        navBar.classList.remove('scrolled');
+        scaleLogo.classList.remove('scrolledScale');
+    }
+})
+
+//Animation txt:
+//Création d'un objet qui regroupe l'ensemble des options:
+const ratio = .2;
 const options = {
         root: null,
         rootMargin: '0px',
-        threshold: ratio,
+        threshold: ratio,//Détermine la partie visible à laquelle l'animation se déclenche
 }
 
 const handleIntersect = function (entries, observer) {
     entries.forEach(function (entry) {
         if (entry.intersectionRatio > ratio) {
-            console.log('visible')
-        } else {
-            console.log('invisible')
+            entry.target.classList.add('reveal-visible')
+            observer.unobserve(entry.target)
         }
     })
 }
 
-const observer = new IntersectionObserver(handleIntersect, options)
-observer.observe(document.querySelector('nav'))
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('.reveal').forEach(function (r) {
+    observer.observe(r)
+})
+
 
 
 //Slider:

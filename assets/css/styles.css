@@ -28,10 +28,29 @@
     color: var(--orange);
 }
 
+.fontSize
+{
+    font-size: 1.5em;
+}
+
+.fontBlue
+{
+    color: var(--blue);
+    margin-top: -2%;
+    margin-left: -3%;
+}
+
 h1
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 3em;
+    color: var(--blue);
+}
+
+h2
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8em;
     color: var(--blue);
 }
 
@@ -48,29 +67,42 @@ p
 /*Nav*/
 nav
 {
-    /*position: fixed;*/
+    position: fixed;
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     padding: 15px 25px;
     background: transparent;
-    box-shadow: inset 0px -1px 0px #c5c5c5;
-    z-index: 2000;
+    box-shadow: 0px -1px 0px #c5c5c5;
+    z-index: 100;
 }
 
+/*Nav Animation*/
+nav.scrolled
+{
+    height: 150px;
+    background-color: white;
+    opacity: 0.98;
+    transition: 1s;
+}
+/*END animation*/
+
+/*Animation au scroll*/
 .reveal
 {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-60px);
 }
 
 .reveal-visible
 {
     opacity: 1;
     transform: translateY(0);
-    transition: .3s;
+    transition: 3s cubic-bezier(.5, 0, 0, 1);
 }
+/*END animation scroll*/
+
 
 .navLinks-container a
 {
@@ -106,6 +138,11 @@ nav
     height: 4em;
     width: 4em;
     margin: auto;
+}
+
+.scrolledScale
+{
+    transform: scale(1);
 }
 /*END Nav*/
 
@@ -147,9 +184,7 @@ button
 /*Slider*/
 .container 
 {
-    position: relative;
-    width: 2250px;
-    top: -100px;
+    width: 2500px; 
 }
 
 .slider img
@@ -222,9 +257,9 @@ img.active
     position: relative;
     height: 220px;
     width: 1800px;
-    bottom: 270px;
+    bottom: 170px;
     background: var(--blue);
-    z-index: 1000;
+    z-index: 10;
 }
 
 .searchZone-content
@@ -319,3 +354,49 @@ input
     left: 80px;
 }
 /*END Section content2*/
+
+/*Section content3*/
+.content3
+{
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 150px 2fr 2fr 2fr 2fr;
+}
+
+.subContent3-1
+{
+    background: var(--beige);
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 4;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.subContent3-2
+{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+}
+
+.content3Titles
+{
+    margin-bottom: 5%;
+}
+
+.eventsSlider img
+{
+    display: none;
+}
+
+.items-events
+{
+    display: flex;
+}
+
+img.active2
+{
+    display: block;
+    animation: fade 0.8s;
+}
+/*END Section content3*/

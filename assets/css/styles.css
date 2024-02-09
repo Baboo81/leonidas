@@ -28,6 +28,13 @@
     color: var(--orange);
 }
 
+.fontCaveat2
+{
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    color: var(--orange);
+}
+
 .fontSize
 {
     font-size: 1.5em;
@@ -52,6 +59,13 @@ h2
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.8em;
     color: var(--blue);
+}
+
+h3
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    color: var(--beige);
 }
 
 p
@@ -396,3 +410,51 @@ input
     transition: 1s;
 }
 /*END Section content3*/
+
+/*Section content4*/
+.content4
+{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+}
+
+.subContent4-1
+{
+    background: url(../img/main/section4.png) center center no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 1;
+    position: relative;
+    bottom: 350px;
+    right: 80px;
+    width: 3000px;
+    height: 500px;
+    z-index: 10;
+}
+
+.subContent4-2
+{
+    background-color: var(--beige);
+    background-size: cover;
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 2;
+}
+
+.content4Title
+{
+    position: relative;
+    left: 750px;
+    top: 100px;
+}
+
+.cards-content
+{
+    background-color: white;
+    height: 600px;
+    border-radius: 12px;
+    padding: 2%;
+    z-index: 80;
+}
+/*END Section content4*/

@@ -449,12 +449,19 @@ input
     top: 100px;
 }
 
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
 .cards-content
 {
     background-color: white;
     height: 600px;
     border-radius: 12px;
     padding: 2%;
+    margin: 1%;
     z-index: 80;
 }
 /*END Section content4*/

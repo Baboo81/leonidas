@@ -84,3 +84,11 @@ function keyPress(e) {
     }
 }
 document.addEventListener('keydown', keyPress);
+
+//EventsContent:
+
+const img1 = document.getElementById('img1');
+
+img1.addEventListener("mouseover", (e) => {
+    return src = "../img/events/cadeauRomantique.jpg";
+});

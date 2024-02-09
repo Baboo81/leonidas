@@ -87,8 +87,61 @@ document.addEventListener('keydown', keyPress);
 
 //EventsContent:
 
-const img1 = document.getElementById('img1');
+const bl1 = document.querySelector('.bloc1');
+const bl2 = document.querySelector('.bloc2');
+const bl3 = document.querySelector('.bloc3');
+const bl4 = document.querySelector('.bloc4');
 
-img1.addEventListener("mouseover", (e) => {
-    return src = "../img/events/cadeauRomantique.jpg";
-});
+
+    bl1.addEventListener("mouseover", () => {
+        let image1 = new Image();
+        image1.src = "/assets/img/events/cadeauRomantique.jpg";
+        document.querySelector('.eventsContent').appendChild(image1);
+        
+    });
+    bl1.addEventListener("mouseout", () => {
+        let image1 = new Image();
+        image1.src = "/assets/img/events/cadeauRomantique.jpg";
+        document.querySelector('.eventsContent').remove(image1);
+        
+    });
+
+    bl2.addEventListener("mouseover", () => {
+        let image2 = new Image();
+        image2.src = "/assets/img/events/cadeauNaissance.jpg";
+        document.querySelector('.eventsContent').appendChild(image2);
+    });
+    bl2.addEventListener("mouseout", () => {
+        let image2 = new Image();
+        image2.src = "/assets/img/events/cadeauNaissance.jpg";
+        document.querySelector('.eventsContent').remove(image2);
+    });
+
+    bl3.addEventListener("mouseover", () => {
+        let image3 = new Image();
+        image3.src = "/assets/img/events/anniversaire.jpg";
+        document.querySelector('.eventsContent').appendChild(image3);
+    });
+    bl3.addEventListener("mouseout", () => {
+        let image3 = new Image();
+        image3.src = "/assets/img/events/anniversaire.jpg";
+        document.querySelector('.eventsContent').remove(image3);
+    });
+
+    bl4.addEventListener("mouseover", () => {
+        let image4 = new Image();
+        image4.src = "/assets/img/events/invitation.jpg";
+        document.querySelector('eventsContent').appendChild(image4);
+    });
+    bl4.addEventListener("mouseout", () => {
+        let image4 = new Image();
+        image4.src = "/assets/img/events/invitation.jpg";
+        document.querySelector('eventsContent').remove(image4);
+    })
+
+   
+    
+    
+    
+
+

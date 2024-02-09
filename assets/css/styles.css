@@ -384,17 +384,10 @@ input
     margin-bottom: 5%;
 }
 
-
-.items-events
+.eventsContent img
 {
-    display: flex;
-    display: none;
-}
-
-img.active2
-{
-    display: block;
-    animation: fade 0.8s;
+    height: 700px;
+    width: 1000px;
 }
 
 .eventsAnimations:hover

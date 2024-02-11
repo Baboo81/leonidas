@@ -484,6 +484,23 @@ input
     margin-top: 5%;
 }
 
+.subContent4-3
+{
+   margin-left: 20%;
+}
+
+.cards-contentXL
+{ 
+    
+    background-color: white;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2%;
+    margin: 1%;
+    z-index: 80;
+}
+
 /*END Section content4*/
 
 

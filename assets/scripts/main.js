@@ -88,6 +88,9 @@ function keyPress(e) {
 }
 document.addEventListener('keydown', keyPress);
 
+//Progress bar:
+
+
 //EventsContent:
 
 const bl1 = document.querySelector('.bloc1');

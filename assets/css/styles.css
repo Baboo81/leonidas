@@ -200,7 +200,7 @@ button
 /*Slider*/
 .container 
 {
-    width: 2500px; 
+    width: 100%; 
 }
 
 .slider img
@@ -216,7 +216,7 @@ button
 .photo
 {
     height: 850px;
-    width: 100%;
+    width: 175em;
     background-size: cover;
 }
 
@@ -273,7 +273,7 @@ img.active
     position: relative;
     height: 220px;
     width: 1800px;
-    bottom: 170px;
+    bottom: 100px;
     background: var(--blue);
     z-index: 10;
 }
@@ -459,7 +459,7 @@ input
     margin-bottom: 3%;
 }
 
-.container
+.cardsContainer
 {
     display: flex;
     justify-content: center;
@@ -468,7 +468,7 @@ input
 .cards-content
 {
     background-color: white;
-    height: 600px;
+    height: 500px;
     border-radius: 12px;
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -486,12 +486,11 @@ input
 
 .subContent4-3
 {
-   margin-left: 20%;
+   margin-left: 10.5%;
 }
 
 .cards-contentXL
 { 
-    
     background-color: white;
     height: 300px;
     border-radius: 12px;
@@ -501,6 +500,61 @@ input
     z-index: 80;
 }
 
-/*END Section content4*/
+.cardXL 
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+}
 
+.email
+{
+    height: 1em;  
+}
+
+.cardTitleXL
+{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+.cardTxtXL
+{
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+.cardBtnXL
+{
+    grid-column: 4;
+    grid-row: 3;
+    text-align: center;
+}
+/*END Section content4*/
+.content5
+{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+}
+
+.subContent5-1
+{
+    grid-column: 2 /span 2;
+}
+
+.subContent5-1Txt
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.7em;
+    color: var(--blue);
+    margin-left: -3%;
+    grid-column: 2 /span 3;
+}
+/*Section content5*/
+/*END Section content5*/
 

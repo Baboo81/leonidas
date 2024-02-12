@@ -17,6 +17,7 @@
     --grey : #333;
     --blue : #0a235b;
     --orange : #ffa800;
+    --yellow : #ebc45e;
     --red : #ff0022;
     --beige : #fff5eb;
 }
@@ -216,7 +217,7 @@ button
 .photo
 {
     height: 850px;
-    width: 175em;
+    width: 200em;
     background-size: cover;
 }
 
@@ -486,7 +487,7 @@ input
 
 .subContent4-3
 {
-   margin-left: 10.5%;
+   margin-left: 15%;
 }
 
 .cards-contentXL
@@ -534,7 +535,7 @@ input
 /*END Section content4*/
 .content5
 {
-    height: 1500px;
+    height: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr 1fr;
@@ -542,7 +543,8 @@ input
 
 .subContent5-1
 {
-    grid-column: 2 /span 2;
+    grid-column: 1 /span 2;
+    margin-left: 15%;
 }
 
 .subContent5-1Txt
@@ -553,8 +555,64 @@ input
     line-height: 1.7em;
     color: var(--blue);
     margin-left: -3%;
-    grid-column: 2 /span 3;
+}
+
+.subContent5-2
+{
+    grid-column: 4 /span 2;    
+}
+
+.subContent5-2Txt
+{
+    margin-left: -50%;
+    color: var(--yellow);
+    font-size: small;
+    font-weight: bold;
+}
+
+.lineOrange
+{
+    position: relative;
+    top: 50px;
+    left: 250px;
+    border-top: 3px var(--orange) solid;
+    width: 100em;
+}
+
+.links
+{
+   display: flex;
+   margin-top: 10%;
+   margin-left: 16%;
+}
+
+.links a
+{
+    text-decoration-line: none;
+    color: var(--blue);
+    line-height: 2em;
+}
+
+.col-1
+{
+    margin-right: 20%;
+}
+
+.col-2
+{
+    margin-right: 20%;
+}
+
+.arrow
+{
+    height: 1em;
+    margin-right: 3%;
 }
 /*Section content5*/
 /*END Section content5*/
 
+footer
+{
+    height: 100px;
+    background: var(--blue);
+}

@@ -40,39 +40,42 @@ document.querySelectorAll('.reveal').forEach(function (r) {
 
 
 //Slider:
-const items = document.querySelectorAll('img');
+const items = document.querySelectorAll('.photo');
 const nbSlide = items.length;
 const next = document.querySelector('.right');
 const prev = document.querySelector('.left');
+const compteur = document.getElementById('counter');
 
 let count = 0;
 
-function nextArrow () {
+setInterval( function nextArrow () {
     items[count].classList.remove('active');
-
+    
     if(count < nbSlide - 1) {
         count++;
+        
     } else {
         count = 0;
     }
 
     items[count].classList.add('active')
 
-}
+}, 4000);
 next.addEventListener('click', nextArrow)
 
-function prevArrow () {
+setInterval( function prevArrow () {
     items[count].classList.remove('active');
 
     if(count > 0) {
         count--;
+       
     } else {
         count = nbSlide - 1;
     }
 
     items[count].classList.add('active')
 
-}
+}, 4000);
 prev.addEventListener('click', prevArrow)
 
 //Gestion des slides par les touches flechées:

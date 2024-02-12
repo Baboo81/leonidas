@@ -224,7 +224,7 @@ button
 img.active
 {
     display: block;
-    animation: fade 0.8s;
+    animation: fade 1s;
 }
 
 @keyframes fade 
@@ -393,12 +393,18 @@ input
 .subContent3-2
 {
     grid-column: 2 / span 4;
-    grid-row: 3 / span 4;
+    grid-row: 1 / span 1;
 }
 
 .content3Titles
 {
     margin-bottom: 5%;
+}
+
+.eventsContent
+{
+    height: 700px;
+    width: 1000px;
 }
 
 .eventsContent img

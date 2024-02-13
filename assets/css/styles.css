@@ -201,79 +201,43 @@ button
 /*Slider*/
 .container 
 {
-    width: 100%; 
-}
-
-.slider img
-{
-    display: none;
-}
-
-.items-slider
-{
-    display: flex;
-}
-
-.photo
-{
-    height: 850px;
-    width: 200em;
-    background-size: cover;
-}
-
-img.active
-{
-    display: block;
-    animation: fade 1s;
-}
-
-@keyframes fade 
-{
-    from
-    {
-        opacity: 0;
-    }
-    to 
-    {
-        opacity: 1;
-    }
-}
-
-.controls-btn
-{
-    position: relative;
-    width: 100%;
-    bottom: 200px;
-    right: 700px;
-    height: auto;
-    background: transparent;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
-}
-
-#counter
-{
+    align-items: flex-end;
     position: relative;
-    color: white;
-    font-size: 1.5em;
-    top: 15px;
 }
 
-.btn-nav
+.slider_container
 {
-    color: white;
-    font-size: 50px;
-    margin: 0 15px;
-    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+.slider_container img
+{
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider_container img.active
+{
+    display: block;
+}
     /*Progress bar*/
 .progress
 {
     position: relative;
     height: 20px;
-    width: 80px;
-    margin-bottom: 2rem;
+    width: 80%;
+    margin-bottom: 9rem;
 }
 
 .progress #length
@@ -283,7 +247,7 @@ img.active
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ff0022;
+    background-color: var(--grey);
 }
 
 .progress #progress_animation
@@ -293,7 +257,7 @@ img.active
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #0a235b;
+    background-color: var(--orange);
     z-index: 55;
     animation: moving;
     animation-duration: 15s;

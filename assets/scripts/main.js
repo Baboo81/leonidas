@@ -40,56 +40,34 @@ document.querySelectorAll('.reveal').forEach(function (r) {
 
 
 //Slider:
-const items = document.querySelectorAll('.photo');
-const nbSlide = items.length;
-const next = document.querySelector('.right');
-const prev = document.querySelector('.left');
-const compteur = document.getElementById('counter');
+const slides = document.querySelectorAll('.slide');
 
-let count = 0;
+function slideShow() {
+    const current = document.querySelector('.active');
+    current.classList.remove('active');
 
-setInterval( function nextArrow () {
-    items[count].classList.remove('active');
-    
-    if(count < nbSlide - 1) {
-        count++;
-        
+    if (current.nextElementSibling) {
+        current.nextElementSibling.classList.add('active');
     } else {
-        count = 0;
+        slides[0].classList.add('active');
     }
 
-    items[count].classList.add('active')
+    setTimeout('slideShow()', 3000);
+}
 
-}, 4000);
-next.addEventListener('click', nextArrow)
-
-setInterval( function prevArrow () {
-    items[count].classList.remove('active');
-
-    if(count > 0) {
-        count--;
-       
-    } else {
-        count = nbSlide - 1;
-    }
-
-    items[count].classList.add('active')
-
-}, 4000);
-prev.addEventListener('click', prevArrow)
+window.onload = slideShow;
 
 //Gestion des slides par les touches flechées:
 function keyPress(e) {
     if(e.keyCode === 37) {
-        prevArrow();
+        slideShow();
     } else if (e.keyCode === 39) {
-        nextArrow();
+        slideShow();
     }
 }
 document.addEventListener('keydown', keyPress);
 
 //Progress bar:
-
 
 //EventsContent:
 

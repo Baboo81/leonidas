@@ -47,6 +47,11 @@ html
     font-size: 1.5em;
 }
 
+.fontSize1em
+{
+    font-size: 1em;
+}
+
 .fontBlue
 {
     color: var(--blue);
@@ -883,6 +888,7 @@ footer
     /*Section content1*/
     .content1
     {
+        height: 1000px;
         margin-left: -40%;
     }
 
@@ -929,10 +935,13 @@ footer
       {
           grid-column: 5 / span 2;
           position: relative;
-          top: 700px;
-          left: -150px;
+          top: 500px;
+          left: -50px;
       }
       /*END Section content2*/
+
+      /*Section content3*/
+      /*END Section content3*/
 }
 
 @media only screen and (min-width : 1301px) and (max-width : 1600px)

@@ -692,7 +692,7 @@ footer
 
 /*Média queries*/
     /*Queries nav*/
-@media  (max-width: 900px) 
+@media  (max-width: 1253px) 
 {
     nav
     {
@@ -830,12 +830,109 @@ footer
 
 @media only screen and (min-width : 769px) and (max-width : 991px)
 {
-
+    
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1300px)
 {
-    
+    /*Search zone*/
+    .searchZone
+    {
+        position: relative;
+        height: 220px;
+        width: 1800px;
+        bottom: 100px;
+        background: var(--blue);
+        z-index: 10;
+    }
+
+    .searchZone-content
+    {
+        display: flex;
+    }
+
+    .pictoShop
+    {
+        display: none;
+    }
+
+    .searchZone-txt
+    {
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 8%;
+    }
+
+    form
+    {
+        padding: 3%;
+    }
+
+    input
+    {
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+    }
+    /*END Search Zone*/
+
+    /*Section content1*/
+    .content1
+    {
+        margin-left: -40%;
+    }
+
+    .subContent1
+    {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 1;
+        margin-top: 25%;
+    }
+    /*END Section content1*/
+
+      /*Section content2*/
+      .content2
+      {
+          height: 1000px;
+          margin-left: 5%;
+          display: grid;
+          grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+          grid-template-rows: 150px 2fr 2fr 2fr 2fr;
+      }
+  
+      .bg-content2
+      {
+          grid-column: 1 / span 2; 
+          grid-row: 2 / span 1;        
+      }
+  
+      .bg-content2 img 
+      {
+          height: 600px;
+          width: 900px;
+      }
+  
+      .subContent2-1
+      {
+          grid-column: 2 / span 2;
+          grid-row: 1 / span 1;
+          position: relative;
+          top: 150px;
+          left: -150px;
+      }
+  
+      .subContent2-2
+      {
+          grid-column: 5 / span 2;
+          position: relative;
+          top: 700px;
+          left: -150px;
+      }
+      /*END Section content2*/
 }
 
 @media only screen and (min-width : 1301px) and (max-width : 1600px)
